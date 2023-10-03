@@ -4,6 +4,8 @@
 
 // Beware: LLVM incompatible intrinsics in use.
 
+extern void arraysum_avx512(void);
+
 void static inline __stdcall sum_f32_array(
     _Inout_ float* const restrict z, const _In_ float* restrict const x, const _In_ float* restrict const y, const _In_ size_t size
 ) {
