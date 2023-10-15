@@ -39,3 +39,7 @@ $cflags = @(
 
 Write-Host "cl.exe ${cfiles} ${cflags}" -ForegroundColor Cyan
 cl.exe $cfiles $cflags    
+
+foreach ($file in $cfiles){
+    Remove-Item $file.Replace(".c", ".obj") -Force
+}

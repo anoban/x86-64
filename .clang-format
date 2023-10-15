@@ -769,8 +769,8 @@ PointerAlignment: Left
 PPIndentWidth:   -1                      # The number of columns to use for indentation of preprocessor statements. 
                                          # When set to -1 (default) IndentWidth is used also for preprocessor statements.
                                          
-QualifierAlignment: Custom               # Different ways to arrange specifiers and qualifiers (e.g. const/volatile).
-QualifierOrder: ['const', 'type', 'static', 'constexpr', 'inline']     
+QualifierAlignment: Leave               # Different ways to arrange specifiers and qualifiers (e.g. const/volatile).
+# QualifierOrder: ['const', 'type', 'static', 'constexpr', 'inline']     
 # Items to the left of 'type' will be placed to the left of the type and aligned in the order supplied. Items to the right of 'type'
 # will be placed to the right of the type and aligned in the order supplied.
 
