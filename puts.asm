@@ -9,7 +9,7 @@ option casemap:none
 	call_puts proc
 	sub rsp, 56
 	lea rcx, _name
-	call puts		; call the C std puts() procedure
+	call puts		; call the C std puts()
 	add rsp, 56
 	ret
 	call_puts endp
